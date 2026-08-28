@@ -8,41 +8,61 @@ interface bonita, e sim o número certo na tela e o pedido que não se perde.
 
 Franca, São Paulo.
 
-### Projetos
+---
 
-**[Cotaí](https://github.com/ObsidianSy/Cota-)** — plataforma B2B de cotação de peças automotivas via WhatsApp
+### Cotaí — cotação de peças automotivas por WhatsApp
+
+[![CI](https://github.com/ObsidianSy/Cota-/actions/workflows/ci.yml/badge.svg)](https://github.com/ObsidianSy/Cota-/actions/workflows/ci.yml)
 
 O mecânico manda "pastilha de freio Onix 2018" no WhatsApp. O sistema
 interpreta a mensagem, identifica a peça e o veículo, dispara para as lojas
 da região, agrega as respostas e devolve as opções para ele escolher. Sem
 aplicativo para instalar de nenhum dos lados.
 
-Monorepo com NestJS e React, PostgreSQL com Prisma, filas em BullMQ, tempo
+Monorepo com NestJS e React, PostgreSQL com Prisma, filas em BullMQ e tempo
 real com Socket.IO. Cerca de 46 mil linhas, 56 suítes de teste, integração
-contínua e migrations versionadas. Está em produção.
+contínua e migrations versionadas. Em produção.
 
-É o projeto onde os problemas foram mais difíceis: concorrência entre lojas
-respondendo a mesma cotação, idempotência de webhook, isolamento entre
-inquilinos e recuperação de estado quando o processo cai no meio.
+É onde os problemas foram mais difíceis: concorrência entre lojas respondendo
+a mesma cotação, idempotência de webhook, isolamento entre inquilinos e
+recuperação de estado quando o processo cai no meio.
 
-**[Import Manager](https://github.com/ObsidianSy/system-import)** — gestão de operação de importação
+**[Ver o repositório](https://github.com/ObsidianSy/Cota-)**
+
+### Import Manager — gestão de operação de importação
 
 Fornecedores, acompanhamento de importações, produtos, estoque, pedidos e
 relatórios em um só lugar, no lugar das planilhas que divergem entre si.
 Cerca de 25 mil linhas, com API tipada de ponta a ponta via tRPC e banco
 versionado por migrations.
 
+**[Ver o repositório](https://github.com/ObsidianSy/system-import)**
+
+---
+
 ### Stack
 
-Cliente
-React, TypeScript, Vite, TailwindCSS, shadcn/ui, TanStack Query, Zustand
+**Front-end**
+- React, TypeScript, Vite
+- TailwindCSS, shadcn/ui
+- TanStack Query, Zustand
+- PWA, Socket.IO client
 
-Servidor
-Node, NestJS, Express, tRPC, Prisma, Drizzle, PostgreSQL, Redis, BullMQ, Socket.IO
+**Back-end**
+- Node, NestJS, Express
+- tRPC, Prisma, Drizzle
+- PostgreSQL, Redis, BullMQ
+- JWT, Zod
 
-Infra
-Docker, S3, integração contínua no GitHub Actions
+**Infra e ferramentas**
+- Docker, Docker Compose
+- GitHub Actions
+- Turborepo, pnpm workspaces
+- S3, Sentry
+
+---
 
 ### Contato
-- E-mail: Deltagarr@gmail.com
-- LinkedIn: www.linkedin.com/in/wesley-siqueira-engineer
+
+- E-mail: SEU-EMAIL-AQUI
+- LinkedIn: SEU-LINKEDIN-AQUI
