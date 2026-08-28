@@ -12,8 +12,6 @@ Franca, São Paulo.
 
 ### Cotaí — cotação de peças automotivas por WhatsApp
 
-[![CI](https://github.com/ObsidianSy/Cota-/actions/workflows/ci.yml/badge.svg)](https://github.com/ObsidianSy/Cota-/actions/workflows/ci.yml)
-
 O mecânico manda "pastilha de freio Onix 2018" no WhatsApp. O sistema
 interpreta a mensagem, identifica a peça e o veículo, dispara para as lojas
 da região, agrega as respostas e devolve as opções para ele escolher. Sem
